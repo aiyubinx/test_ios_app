@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7BDA4CFA2D2E8FD800A9CF36 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 7BDA4CF92D2E8FD800A9CF36 /* .swiftlint.yml */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		49A246D82D15341D0067D439 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		49A246C22D15341B0067D439 /* Test iOS App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test iOS App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A246D72D15341D0067D439 /* Test iOS AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test iOS AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A246E12D15341D0067D439 /* Test iOS AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test iOS AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BDA4CF92D2E8FD800A9CF36 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +80,7 @@
 		49A246B92D15341B0067D439 = {
 			isa = PBXGroup;
 			children = (
+				7BDA4CF92D2E8FD800A9CF36 /* .swiftlint.yml */,
 				49A246C42D15341B0067D439 /* Test iOS App */,
 				49A246DA2D15341D0067D439 /* Test iOS AppTests */,
 				49A246E42D15341D0067D439 /* Test iOS AppUITests */,
@@ -212,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BDA4CFA2D2E8FD800A9CF36 /* .swiftlint.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
