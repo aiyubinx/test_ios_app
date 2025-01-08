@@ -8,23 +8,29 @@
 import SwiftUI
 
 struct RowView: View {
-    let item: Item
-    
-    var body: some View {
-        VStack {
-            HStack {
-                Text(item.title ?? "Untitled")
-                    .font(.title)
-                Spacer()
-            }
-            HStack {
-                Text(item.timestamp!, formatter: itemFormatter)
-                    .font(.subheadline)
-                Spacer()
-            }
-        }
-    }
-}
+          @ObservedObject var item: Item
+          
+          var body: some View {
+              VStack {
+                  HStack {
+                      Text(item.title ?? "Untitled")
+                          .font(.title)
+                      Spacer()
+                  }
+                  HStack {
+                      if let timestamp = item.timestamp {
+                          Text(timestamp, formatter: itemFormatter)
+                              .font(.subheadline)
+                      } else {
+                          Text("No timestamp available")
+                              .font(.subheadline)
+                              .foregroundColor(.gray)
+                      }
+                      Spacer()
+                  }
+              }
+          }
+      }
 
 private let itemFormatter: DateFormatter = {
     let formatter = DateFormatter()
